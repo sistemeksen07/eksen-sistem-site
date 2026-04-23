@@ -7,14 +7,12 @@
   <meta name="description" content="Eksen Sistem | Uydu, güvenlik, kamera, diafon, alarm ve merkezi sistem çözümleri." />
   <style>
     :root {
-      --bg: #fcfbf9;
       --text: #111111;
       --muted: #6b6b6b;
       --line: #e8e2db;
       --accent: #ff6a00;
       --accent-soft: #fff1e7;
       --shadow: 0 20px 45px rgba(0,0,0,.08);
-      --radius: 22px;
     }
 
     * { box-sizing: border-box; }
@@ -51,21 +49,12 @@
       gap: 14px;
     }
 
-    .brand-mark {
-      width: 50px;
-      height: 50px;
-      border-radius: 16px;
-      background:
-        radial-gradient(circle at center, #111111 0 5px, transparent 6px),
-        linear-gradient(90deg, transparent 18%, #111111 18% 82%, transparent 82%),
-        radial-gradient(circle at 72% 28%, var(--accent) 0 3px, transparent 4px),
-        radial-gradient(circle at 72% 72%, var(--accent) 0 3px, transparent 4px),
-        radial-gradient(circle at 28% 28%, #111111 0 3px, transparent 4px),
-        radial-gradient(circle at 28% 72%, #111111 0 3px, transparent 4px),
-        conic-gradient(from 180deg at 50% 50%, transparent 0 35%, rgba(255,106,0,.95) 35% 46%, transparent 46% 100%),
-        #fff;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
+    .brand-logo {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,.08));
       flex: 0 0 auto;
     }
 
@@ -248,7 +237,7 @@
   <div class="page">
     <header class="topbar">
       <div class="brand">
-        <div class="brand-mark"></div>
+        <img class="brand-logo" alt="Eksen Sistem logo" src="data:image/webp;base64,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" />
         <div class="brand-text">
           <strong>Eksen Sistem</strong>
           <span>Uydu • Güvenlik • Merkezi Sistem</span>
